@@ -65,7 +65,8 @@ module.exports = {
       template: './index.html',
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      hot: isDev
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
