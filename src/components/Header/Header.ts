@@ -1,5 +1,5 @@
-import KanbanElement from "../../core/KanbanElement/KanbanElement";
-import { DOM } from "../../core/DomManipulator";
+import KanbanElement from "@core/KanbanElement/KanbanElement";
+import { DOM } from "@core/DomManipulator";
 
 export default class Header extends KanbanElement {
   static className : string = 'header'

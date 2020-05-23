@@ -1,6 +1,6 @@
-import IKanbanElement from "../../core/KanbanElement/IKanbanElement"
-import IKanbanElementConstructor from "../../core/KanbanElement/IKanbanElementConstructor"
-import { DOM, $ } from '../../core/DomManipulator'
+import IKanbanElement from "@core/KanbanElement/IKanbanElement"
+import IKanbanElementConstructor from "@core/KanbanElement/IKanbanElementConstructor"
+import { DOM, $ } from '@core/DomManipulator'
 
 export default class Kanban {
   components : Array<IKanbanElementConstructor>
