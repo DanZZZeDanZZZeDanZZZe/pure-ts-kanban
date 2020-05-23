@@ -1,4 +1,10 @@
 import './scss/index.scss'
-import $ from './core/DomManipulator'
+import Kanban from './components/Kanban/Kanban'
+import Header from './components/Header/Header'
 
-console.log($('#app').html('<h1>Hello</h1>'))
+
+const kanban : Kanban = new Kanban(
+  document.getElementById('app'), [Header]
+)
+kanban.render()
+console.log(kanban)
