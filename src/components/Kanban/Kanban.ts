@@ -26,5 +26,8 @@ export default class Kanban {
 
   render() : void {
     this.$el.append(this.getRoot())
+    this.classInstances.forEach((component : IKanbanElement) => {
+      component.init()
+    })
   }
 } 

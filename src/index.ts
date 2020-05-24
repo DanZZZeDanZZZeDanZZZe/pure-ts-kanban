@@ -8,4 +8,4 @@ const kanban : Kanban = new Kanban(
   document.getElementById('app'), [Header, Surface, Footer]
 )
 kanban.render()
-console.log(kanban)
+
