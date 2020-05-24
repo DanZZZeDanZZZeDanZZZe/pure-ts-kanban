@@ -24,11 +24,20 @@ class DOM {
     this.$el.append(node)
     return this
   }
+
+  on(type : string, listener : (event? : Event) => void ) {
+    this.$el.addEventListener(type, listener)
+  }
+
+  off(type : string, listener : (event? : Event) => void ) {
+    this.$el.removeEventListener(type, listener)
+  }
 }
 
 function $(element : html) : DOM {
   return new DOM(element)
 }
+
 
 $.create = function(tag : string, classes ?: string) : DOM {   
   const $el : HTMLElement = document.createElement(tag)
